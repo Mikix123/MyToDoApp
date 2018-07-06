@@ -3,10 +3,17 @@
 </ActionBar>
 
 <GridLayout class="page">
+    <GridLayout rows="auto, *, auto">
+        <Calendar row="0"></Calendar>
 
-        <StackLayout>
-                <!-- content here -->
-                <Label text="Hello, world!"></Label>
-            </StackLayout>
-    
+        <ListView separatorColor="transparent" [items]="toDoItems" class="list-group" row="1">
+            <ng-template let-todoitem="item" let-i="index" let-odd="odd" let-even="even">
+                    <ToDoListItem [toDoItem]="todoitem"></ToDoListItem>
+            </ng-template>
+        </ListView>
+
+        <Button class="add-button" text="+" row="2"></Button>
+
+    </GridLayout>
+
 </GridLayout>

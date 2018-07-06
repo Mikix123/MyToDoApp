@@ -1,0 +1,13 @@
+.add-button {
+  margin: 8;
+  width: 80;
+  height: 80;
+  border-radius: 90;
+  box-shadow: 0 3 10 rgba(62, 192, 136, 0.8);
+  background-color: #4fe3a3;
+  font-size: 28;
+  letter-spacing: 4;
+  color: green;
+  font-family: "Gotham Rounded";
+}
+

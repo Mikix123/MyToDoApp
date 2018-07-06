@@ -1,0 +1,38 @@
+.grid-layout {
+  margin-top: 20;
+  margin-left: 50;
+  margin-right: 70;
+}
+
+.day-no-label {
+  font-size: 66px;
+  line-height: 80px;
+  vertical-align: middle;
+  margin-right: 8;
+  color: rgb(97, 100, 115);
+  font-family: "Gotham Rounded";
+}
+
+.date-mon-label {
+  font-size: 16px;
+  text-align: left;
+  vertical-align: bottom;
+  color: rgb(97, 100, 115);
+  font-family: "Gotham Rounded";
+}
+
+.date-year-label {
+    font-size: 16px;
+    text-align: left;
+    vertical-align: top;
+    color: rgb(97, 100, 115);
+    font-family: "Gotham Rounded";
+  }
+
+.date-day-label {
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(97, 100, 115);
+    font-family: "Gotham Rounded";
+  }

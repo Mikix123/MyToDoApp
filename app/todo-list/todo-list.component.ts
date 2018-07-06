@@ -1,18 +1,24 @@
 import { Component, OnInit } from "@angular/core";
+import { ToDoItem } from "~/models/todo-item";
+import { Page } from "ui/page";
 
 @Component({
-    selector: "ToDoList",
-    moduleId: module.id,
-    templateUrl: "./todo-list.component.html",
-    styleUrls: ["./todo-list.component.css"]
+  selector: "ToDoList",
+  moduleId: module.id,
+  templateUrl: "./todo-list.component.html",
+  styleUrls: ["./todo-list.component.css"]
 })
 export class ToDoListComponent implements OnInit {
+  public toDoItems: ToDoItem[];
 
-    constructor() {
-        // Use the component constructor to inject providers.
-    }
+  constructor(private _page: Page) {
+    this._page.actionBarHidden = true;
+    this.toDoItems = [];
 
-    ngOnInit(): void {
-        // Init your component properties here.
+    for (let i = 0; i < 10; i++) {
+      this.toDoItems.push(new ToDoItem("Test item " + [i], false));
     }
+  }
+
+  ngOnInit(): void {}
 }

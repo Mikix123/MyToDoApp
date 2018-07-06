@@ -1,0 +1,29 @@
+.todo-item {
+    margin-left: 50;
+    margin-right: 60;
+    margin-top: 13;
+    margin-bottom: 13;
+    align-items: center;
+}
+
+.todo-item-label {
+    vertical-align: middle;
+    font-size: 20px;
+    line-height: 80px;
+    color: rgb(62,67,79);
+    font-family: "Gotham Rounded";
+}
+
+.todo-item-label-cross {
+    vertical-align: middle;
+    font-size: 20px;
+    line-height: 80px;
+    color: rgb(62,67,79);
+    font-family: "Gotham Rounded";
+    text-decoration: line-through;
+}
+
+
+.check-box {
+    vertical-align: middle;
+}

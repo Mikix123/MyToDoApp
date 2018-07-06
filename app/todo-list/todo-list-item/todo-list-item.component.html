@@ -1,0 +1,4 @@
+<GridLayout columns="*, auto" class="todo-item">
+    <Label [text]="toDoItem.name" col="0" [class]="toDoItem.done ? 'todo-item-label-cross' : 'todo-item-label'"></Label>
+    <CheckBox:CheckBox [(ngModel)]="toDoItem.done" col="1" tintColor="green" class="check-box" />
+</GridLayout>
